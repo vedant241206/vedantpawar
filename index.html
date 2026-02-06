@@ -24,6 +24,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
   <style>
+.cursor-trail {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #87ceeb;
+  pointer-events: none;
+  z-index: 9999;
+  will-change: transform, top, left;
+  filter: drop-shadow(0 0 6px rgba(135, 206, 235, 0.8));
+}
   .theme-dark {
     transition-duration: 600ms;
     background-color: #111;
@@ -974,6 +985,55 @@ I’m sure this mindset will help you a lot ahead.</p><h3>    ~Madheshiya Homes<
     body2.classList.toggle("theme-light")
   })
 </script>
+<script>
+  // Disable on touch devices
+  if (!('ontouchstart' in window)) {
+    const DOT_COUNT = 15;
+    const dots = [];
+    const mouse = { x: 0, y: 0 };
+
+    for (let i = 0; i < DOT_COUNT; i++) {
+      const dot = document.createElement('div');
+      dot.className = 'cursor-trail';
+
+      const scale = (DOT_COUNT - i) / DOT_COUNT;
+      dot.style.transform = `scale(${scale})`;
+      dot.style.opacity = scale;
+
+      document.body.appendChild(dot);
+      dots.push(dot);
+    }
+
+    window.addEventListener('mousemove', (e) => {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+    });
+
+    const trail = dots.map(() => ({ x: 0, y: 0 }));
+
+    function animate() {
+      let x = mouse.x;
+      let y = mouse.y;
+
+      dots.forEach((dot, i) => {
+        trail[i].x += (x - trail[i].x) * 0.25;
+        trail[i].y += (y - trail[i].y) * 0.25;
+
+        dot.style.left = `${trail[i].x - 6}px`;
+        dot.style.top = `${trail[i].y - 6}px`;
+
+        x = trail[i].x;
+        y = trail[i].y;
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  }
+</script>
+
+	
     <script>
   const words = [
     "AI-Data Science Student",
@@ -1040,5 +1100,6 @@ I’m sure this mindset will help you a lot ahead.</p><h3>    ~Madheshiya Homes<
 
 
 </html>
+
 
 
