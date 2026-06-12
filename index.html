@@ -522,11 +522,11 @@
     </div>
 
 
-    <div class="grid grid-cols-2 w-full min-h-screen ">
-      <a href="">
-        <div class="border-r-4 border-[#87ceeb] flex items-center justify-center relative group">
+    <div class="grid grid-cols-1 md:grid-cols-2 w-full min-h-screen ">
+      <a href="" class="order-1 md:order-1">
+        <div class="md:border-r-4 border-b-4 md:border-b-0 border-[#87ceeb] flex items-center justify-center relative group">
           <span
-            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#0c98a5] text-white font-bold  px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
+            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#0c98a5] text-white font-bold  px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-10 md:top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 z-10">
             PreDoc
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -536,20 +536,20 @@
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
           </span>
-          <div class="w-1/2 h-1 bg-[#87ceeb] absolute right-0"></div>
+          <div class="w-1/2 h-[3px] bg-[#87ceeb] absolute right-0 top-1/2 -translate-y-1/2 hidden md:block"></div>
           <img src="assets/images/WhatsApp_Image_2026-06-12_at_3.33.01_PM-removebg-preview.png" alt="predoc project"
-            class="scale-50 translate-x-6 relative drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)]  group-hover:scale-[0.80]  hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)]  ease-in-out duration-150" />
+            class="scale-75 md:scale-50 md:translate-x-6 relative drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)]  group-hover:scale-[0.80]  hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)]  ease-in-out duration-150" />
         </div>
       </a>
 
-      <div class="flex flex-col justify-center px-10">
-        <p class="text-[#87ceeb] text-4xl font-bold mb-6 text-center">
+      <div class="flex flex-col justify-center px-5 md:px-10 py-6 md:py-0 order-2 md:order-2">
+        <p class="text-[#87ceeb] text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-center">
           PreDoc
         </p>
 
-        <p class="text-xl  text-center ">
+        <p class="text-base md:text-xl text-center ">
           Pre-Doctor is an AI-powered health app that monitors wellness through smartphone sensors and wearables, providing real-time health insights, risk alerts, AI assistance, MedCheck analysis, and nearby doctor recommendations with a modern user experience.
-          <div class="gap-1 flex flex-wrap m-2"> <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
+          <div class="gap-1 flex flex-wrap justify-center m-2"> <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
           OpenCV
         </span>
       <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
@@ -570,18 +570,19 @@
         </p>
       </div>
 
-      <div class="border-r-4 border-[#87ceeb] flex flex-col justify-center px-10">
-        <p class="text-[#0c98a5] text-4xl font-bold mb-6 text-center">
+      <!-- PARKVUE: on mobile, image comes first (reordered via order) -->
+      <div class="md:border-r-4 border-b-4 md:border-b-0 border-[#87ceeb] flex flex-col justify-center px-5 md:px-10 py-6 md:py-0 order-4 md:order-3">
+        <p class="text-[#0c98a5] text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-center">
           PARKVUE
         </p>
 
-        <p class="text-xl text-center">
+        <p class="text-base md:text-xl text-center">
           PARKVUE is a modern smart-parking management experience designed with a strong
           focus on visual clarity and user flow. Built with AI-assisted workflows, it
           reflects how thoughtful planning, Gemini Vision, UI sense, and emerging tools can create
           clean real-world problem-solving tech products.
 
-          <div class="gap-1 flex flex-wrap m-2"> <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
+          <div class="gap-1 flex flex-wrap justify-center m-2"> <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
           REACT JS
         </span>
       <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
@@ -604,10 +605,10 @@
         </span></div>
         </p>
       </div>
-      <a href="https://parkvue-lemon.vercel.app " target="_blank">
-        <div class="flex items-center justify-center relative group">
+      <a href="https://parkvue-lemon.vercel.app " target="_blank" class="order-3 md:order-4">
+        <div class="flex items-center justify-center relative group border-b-4 md:border-b-0 border-[#87ceeb]">
           <span
-            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#0c98a5] text-white font-bold px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
+            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#0c98a5] text-white font-bold px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-10 md:top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 z-10">
             Visit PARKVUE
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -617,16 +618,16 @@
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
           </span>
-          <div class="w-1/2 h-1 bg-[#87ceeb] absolute left-0"></div>
+          <div class="w-1/2 h-[3px] bg-[#87ceeb] absolute left-0 top-1/2 -translate-y-1/2 hidden md:block"></div>
           <img src="assets/images/parkv-removebg-preview.png" alt="parkvue project image"
-            class="scale-75 -translate-x-6 relative group-hover:scale-[0.80] drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)]  hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)]  ease-in-out duration-150" />
+            class="scale-75 md:-translate-x-6 relative group-hover:scale-[0.80] drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)]  hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)]  ease-in-out duration-150" />
 
         </div>
       </a>
-      <a href="https://music-webplayer-project.vercel.app/login.html" target="_blank">
-        <div class="border-r-4 border-[#87ceeb] flex items-center justify-center relative group">
+      <a href="https://music-webplayer-project.vercel.app/login.html" target="_blank" class="order-5 md:order-5">
+        <div class="md:border-r-4 border-b-4 md:border-b-0 border-[#87ceeb] flex items-center justify-center relative group">
           <span
-            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#184c39] text-white font-bold px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2">
+            class="group-hover:-top-5 ease-in-out duration-150 flex bg-[#184c39] text-white font-bold px-4 py-2 rounded-xl w-max items-center gap-1 absolute top-10 md:top-20 after:content-[''] after:w-4 after:h-4 after:bg-inherit after:absolute after:left-1/2 after:-translate-x-1/2 after:rotate-45 after:-bottom-2 z-10">
             Visit Web Player
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
               stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -636,24 +637,24 @@
               <line x1="10" y1="14" x2="21" y2="3"></line>
             </svg>
           </span>
-          <div class="w-1/2 h-1 bg-[#87ceeb] absolute right-0"></div>
+          <div class="w-1/2 h-[3px] bg-[#87ceeb] absolute right-0 top-1/2 -translate-y-1/2 hidden md:block"></div>
           <img src="assets/images/music-removebg-preview.png" alt="music web player image"
-            class="scale-75 translate-x-6 drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)] relative group-hover:scale-[0.80] hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)] ease-in-out duration-150" />
+            class="scale-75 md:translate-x-6 drop-shadow-[0_0px_30px_rgba(59,130,246,0.6)] relative group-hover:scale-[0.80] hover:drop-shadow-[0_0px_40px_rgba(59,130,246,0.8)] ease-in-out duration-150" />
         </div>
       </a>
 
-      <div class="flex flex-col justify-center px-10">
-        <p class="text-[#184c39] text-4xl font-bold mb-6 text-center">
+      <div class="flex flex-col justify-center px-5 md:px-10 py-6 md:py-0 order-6 md:order-6">
+        <p class="text-[#184c39] text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-center">
           MUSIC WEB PLAYER
         </p>
 
-        <p class="text-xl  text-center">
+        <p class="text-base md:text-xl text-center">
           A minimal yet engaging music web player crafted completely from scratch to
           strengthen frontend fundamentals. This project dives deep into JavaScript
           logic, DOM manipulation, and responsive interactive UI behavior. Proving that
           powerful experiences can be built without heavy frameworks.
 
-          <div  class="gap-1 flex flex-wrap m-2">
+          <div  class="gap-1 flex flex-wrap justify-center m-2">
             <span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
           DOM MANIPULATION
         </span><span class="px-4 py-2 text-sm border border-white/20 rounded-full hover:bg-[#222] duration-200 ease-in-out">
@@ -1091,7 +1092,6 @@ I’m sure this mindset will help you a lot ahead.</p><h3>    ~Madheshiya Homes<
 
 
 </html>
-
 
 
 
